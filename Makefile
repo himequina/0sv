@@ -10,10 +10,10 @@ CFLAGS=-O2 -Wall
 	${CC} ${FLAGS} -c $<
 
 clean:
-	@rm -rf *.exe *.o
+	@rm -rf 0sv *.o
 
 install: 0sv
-	cp 0sv /usr/local/bin/
+	cp 0sv 0awk /usr/local/bin/
 
 uninstall:
-	rm -f /usr/local/bin/0sv
+	rm -f /usr/local/bin/0sv /usr/local/bin/0awk

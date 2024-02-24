@@ -1,0 +1,3 @@
+#!/bin/sh
+0sv | awk -F'\0' -v RS="\x0c" "$*"
+
