@@ -44,6 +44,12 @@ int transfer(int c) {
             mode = 0;
         }
 
+        /* end of record */
+        else if (c == '\n') {
+            c    = '\f';
+            mode = 0;
+        }
+
         /* error */
         else { exit(3); }
 
